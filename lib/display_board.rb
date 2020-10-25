@@ -1,15 +1,12 @@
 # Define display_board that accepts a board and prints
 # out the current state.
-def display_board
-  puts "   |   |   "
+def display_board(board)
+  
+  puts "#{board[0]}|#{board[1]}|#{board[2]}"
   puts "-----------"
-  puts "   |   |   "
+  puts "#{board[3]}|#{board[4]}|#{board[5]}"
   puts "-----------"
-  puts "   |   |   "
+  puts "#{board[6]}|#{board[7]}|#{board[8]}"
 end
 
-colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
-
-def display_rainbow(colors)
-  puts "R: #{colors[0]}, O: #{colors[1]}, Y: #{colors[2]}, G: #{colors[3]}, B: #{colors[4]}, I: #{colors[5]}, V: #{colors[6]}"
-end
+board = ['','','','','','','','','']
